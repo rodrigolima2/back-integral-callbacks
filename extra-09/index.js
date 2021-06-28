@@ -30,3 +30,11 @@ const pessoas = [
         profissao: 'Programador'
     }
 ];
+
+const programadoresMaisDeVinte = pessoas.filter(x => x.idade > 20 && x.profissao === "Programador");
+const jornalistasMaisDeTrinta = pessoas.filter(x => x.idade > 30 && x.profissao === "Jornalista");
+const progEJornJovens = pessoas.filter(x => x.idade <= 29 && (x.profissao === "Jornalista" || x.profissao === "Programador"));
+
+console.log(programadoresMaisDeVinte);
+console.log(jornalistasMaisDeTrinta);
+console.log(progEJornJovens);
